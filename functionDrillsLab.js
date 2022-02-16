@@ -10,8 +10,12 @@
   Create a function called helloWorld which simply console logs 'Hello, World!'
   Call the function.
 */
+// let statement = "Hello, World!"
+// function helloWorld(){
+//   console.log(statement)
+// }
 
-//CODE HERE
+// helloWorld()
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -20,8 +24,11 @@
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+// const jsNinja = () => {
+//   console.log("I am a JavaScript ninja!")
+// }
 
+// jsNinja()
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -30,8 +37,13 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+// let name = "Palmer"
 
+// function logName(){
+//   console.log(name)
+// }
+
+// logName()
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -44,8 +56,12 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+// function greeting(){
+//   const nameconvert = String(name)
+//   console.log(`"hello  ${nameconvert}`)
+// }
 
+// greeting()
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -58,8 +74,20 @@
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
 
+
+// const compareNums = (numA, numB) => {
+
+//   if(numA === numB){
+//     console.log("They are the same")
+//   } else if (numA > numB){
+//     console.log(numA)
+//   } else{
+//     console.log(numB)
+//   }
+// }
+
+// compareNums(4,4)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -69,9 +97,23 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+// sum = 10
 
+// function add(val1, val2){
 
+//   if (typeof val1 === "string"){
+//     val1 = Number(val1)
+//   }
+//   if (typeof val2 === "string"){
+//     val2 = Number(val2)
+//   }
+
+//   return val1 + val2
+
+// }
+// sum += add("3",2)
+
+// console.log(sum)
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -83,8 +125,7 @@ const exclaim = function(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
+
 // expression
 
 
@@ -100,9 +141,8 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
-// declaration
-// expression
+// arrow 
+
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -124,9 +164,9 @@ function exclaimFour(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+
 // declaration
-// expression
+
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -138,8 +178,20 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+// function namecheck(name){
+//   if(name === 'steven'){
+//     return "whats up steven?"
+//   }
+//   if (name === 'bryan'){
+//     return 'hey, bryan'
+//   }
+//   if (name === " "){
+//     return `thats a cool ${name}`
+//   }
+// }
 
+// let namegreeting = namecheck('steven')
+// console.log(namegreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -151,7 +203,22 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+
+
+// function faveColorFinder(color){
+//   if(color === "red"){
+//     return "red is a great color"
+//   }
+//   else if(color === "green"){
+//     return "green is a solid favorite color"
+//   } else if (color === "black"){
+//     return "So Trendy"
+//   }else{
+//     return "You need to reevaluate your favorite color choice"
+//   }
+// }
+// let colorRating = faveColorFinder("black")
+// console.log(colorRating)
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -162,8 +229,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+// function printAllNames(){
+//   for(i = 0; i < namesArr.length; i++){
+//     console.log(namesArr[i])
+//   }
+// }
 
+// printAllNames()
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -173,8 +245,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
-
+// function thatsOdd (anumber) {
+// if(anumber %2 === 0){
+//   return "thats not odd!"
+// }else {
+//   return "That is odd indeed!"
+// }
+// }
+// let printoddoreven = thatsOdd(2)
+// console.log(printoddoreven)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -186,7 +265,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+// const bestMovie = (movie) =>{
+//   return `${movie} is the best movie ever`
+// }
+// let resultbest = bestMovie("interstellar")
+// console.log(resultbest)
+
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -200,18 +284,34 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+// function bigOrSmall (arr){
+//   let answers = []
+//   for (i = 0; i < bigOrSmallArray.length; i++ ){
+//     if(bigOrSmallArray[i] > 100){
+//       answers.push("big")
+//     } else {
+//       answers.push("small")
+//     } 
+//   }return answers
+
+// }
+// let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+// console.log(arrayEvaluator)
 
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
 let loser = 'Glimmer'
 /*
-  Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
-  The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
+  Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array 
+    of strings), and loser (which will be a string).
+  The function should loop over the array of contestant names. 
+  If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+function theEliminator(name1,name2) {
+
+}
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -221,7 +321,7 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+
 
 
 ////////////////// PROBLEM 18 ////////////////////
