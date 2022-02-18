@@ -321,8 +321,12 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
+const upper = (obj) => {
+let strUp = obj.toUpperCase()
+return strUp
+}
 
-
+console.log(upper(sampleString))
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -335,18 +339,45 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+
+// function emailCheck(email) {
+//   const email = String(email).trim()
+//   if (email.includes("@")){
+//     return "email verified"
+//   }else {
+//     return "must provide valid email address"
+//   }
+// }
+
+// console.log(emailCheck)
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
+  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. 
+  Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. 
+  Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+function buyFroggos (obj) {
+if(obj % 3 === 0){
+  obj = (obj / 3) 
+  return `You can buy ${obj} froggos`
+} else {
+  return `You cant buy no frogos dude`
+}
+}
 
+let totalFrogs = buyFroggos(6)
+
+console.log(totalFrogs)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
-  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
+  You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... 
+  However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product.
+   Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. 
+   Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
 //CODE HERE
@@ -383,13 +414,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["duck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["duck", "realDuck"]
